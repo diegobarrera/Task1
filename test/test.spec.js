@@ -59,4 +59,13 @@ describe('Test task 1', () => {
     expect(result[33].value()).to.equal(3)
   })
 
+  it('Should work with negative numbers', () => {
+    it('Should work with big numbers', () => {
+      let testArray = [-4, 2, -99999, 15];
+      let result = solution(testArray)
+      expect(result).to.have.lengthOf(4)
+      expect(result[4].value()).to.equal(-99999)
+    })
+  })
+
 })
